@@ -1,0 +1,13 @@
+.navbar{
+    background-color: aliceblue;
+}
+.navbar h1{
+    color: burlywood;
+    margin-left: 3%;
+}
+.navbar h1 span{
+    color:black;
+}
+.navbar ul{
+    margin-right: 10%;
+}
