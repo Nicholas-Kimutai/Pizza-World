@@ -13,3 +13,10 @@
     margin-right: 10%;
     font-size: 20px;
 }
+.home{
+    height:700PX;
+    background-image: url('../Assets/pizzaHome.jpeg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
