@@ -1,5 +1,6 @@
 .navbar{
     background-color: aliceblue;
+    padding-top: 1%;
 }
 .navbar h1{
     color: burlywood;
@@ -10,4 +11,5 @@
 }
 .navbar ul{
     margin-right: 10%;
+    font-size: 20px;
 }
