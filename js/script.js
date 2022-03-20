@@ -139,4 +139,31 @@ $(document).ready(function(){
     })
 });
 
+//Form submission function
+function formSub(){
+    event.preventDefault();
+    var name=document.getElementById("name").value;
+    var email=document.getElementById("email").value;
+    var message=document.getElementById("message").value;
+
+    if((name=="")||(name==null)){
+        alert("Please enter your name")
+    }
+    else if((email=="")||(email==null)||(!validMail(email))){
+        alert("Please enter a valid email")
+    }
+    else if((message=="")||(message==null)){
+        alert("Please enter your message")
+    }
+    else{
+        alert(name + " we have received your message. Thank you for reaching out to us.")
+    }
+ }
+
+ //Email validation
+function validMail($email) {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailReg.test($email);
+  }
+
 
