@@ -34,4 +34,13 @@ var pizzas =[{name: "Veggie",
               crusts:[{name:"crispy",price:50},{name:"stuffed",price:100},{name:"gluten",price:200}],
               toppings:[{name:"mushroom",price:100},{name:"bacon",price:150},{name:"broccoli",price:50}]}  
             ];
-            
+
+//Create a Pizza constructor
+
+function Pizza(name,size,crust,toppings,total){
+    this.name = name;
+    this.size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+    this.total = total;
+}
