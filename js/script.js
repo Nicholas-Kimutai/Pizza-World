@@ -44,3 +44,9 @@ function Pizza(name,size,crust,toppings,total){
     this.toppings = toppings;
     this.total = total;
 }
+Pizza.prototype.pizzaTopp = function(){
+    let top = "";
+    this.toppings.forEach(function(topping){
+        top = topping.name;
+    });
+}
