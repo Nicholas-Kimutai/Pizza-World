@@ -79,4 +79,20 @@ $(document).ready(function(){
                             pizzaCrust = crust.name;
                         }
                     });
+                    pizza.toppings.forEach(function(topping){
+                        var isChecked = $("#"+topping.name).is(':checked');
+                        if(isChecked){
+                            $("#"+topping.name+"-"+"price").text(topping.price);
+                            toppingInput = topping.price;
+                            if(!pizzaToppings.includes(topping.name)){
+                                pizzaToppings.push(topping.name);
+                            }
+                        }
+                    })
+                    total = sizeInput + toppingInput;
+                   
+                   
+                    $("#totalPrice").text( "Ksh."+ total); 
+                });
+
 
