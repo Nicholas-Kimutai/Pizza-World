@@ -95,4 +95,27 @@ $(document).ready(function(){
                     $("#totalPrice").text( "Ksh."+ total); 
                 });
 
+                $("form#myOrders").submit(function(event){
+                    
+                    event.preventDefault();
+                    netTotal += total;
+                    console.log(netTotal)
+                    var pizzaChoice = new Pizza(pizza.name,pizzaSize,pizzaCrust,pizzaToppings,total);
+
+                    $("#nameOrder").text( pizzaChoice.name); 
+                    $("#priceOrder").text( "Ksh." + pizzaChoice.total); 
+                    $("#notordered").hide();
+                    $(".table").show();
+                    $("#total-orders").append('<tr><td id="pizzaname">'+pizzaChoice.name +'</td><td id="pizzasize">' + pizzaChoice.size + '</td><td id="pizzacrust">'+pizzaChoice.crust + '</td><td id="pizzatopping">'+pizzaChoice.toppings+'</td><td id="pizzaprice">'+pizzaChoice.total+'</td></tr>');
+                    $("#pizzatotalprice").text("Your total order amount is: " + netTotal);
+
+                    $('input[name="size"]').prop('checked', false);
+                    $('input[name="crust"]').prop('checked', false);
+                    $('input[name="topping"]').prop('checked', false);
+                    $(".order-btn").show()
+                }); 
+            }
+        })
+    });
+
 
