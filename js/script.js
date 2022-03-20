@@ -64,3 +64,19 @@ $(document).ready(function(){
                 var pizzaCrust = "";
                 var pizzaToppings = [];
 
+                $("#myOrders").click(function() {
+                    pizza.sizes.forEach(function(size){
+                        var isChecked = $("#"+size.name).is(':checked');
+                        if(isChecked){
+                            $("#"+size.name+"-"+"price").text(size.price);
+                            sizeInput = size.price;
+                            pizzaSize = size.name;
+                        }
+                    });
+                    pizza.crusts.forEach(function(crust){
+                        var isChecked = $("#"+crust.name).is(':checked');
+                        if(isChecked){
+                            pizzaCrust = crust.name;
+                        }
+                    });
+
