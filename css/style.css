@@ -30,12 +30,15 @@
 .home h4{
     padding-top: 20%;
 }
+.Our_Menu{
+    padding-bottom: 3%;
+}
 .contact_us{
     background-color:whitesmoke;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 2%;
+    padding-top: 1%;
     }
     .contact_us h2{
         text-align: center;
@@ -47,3 +50,11 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+.footer{
+    background-color: black;
+    color: white;
+    padding-top: 1%;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
