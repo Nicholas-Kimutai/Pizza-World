@@ -141,7 +141,6 @@ $(document).ready(function(){
 
 //Form submission function
 function formSub(){
-    event.preventDefault();
     var name=document.getElementById("name").value;
     var email=document.getElementById("email").value;
     var message=document.getElementById("message").value;

@@ -30,8 +30,16 @@
 .home h4{
     padding-top: 20%;
 }
+.OrderH h2{
+    text-align: center;
+    padding-left: 60%;
+    color: burlywood;
+}
 .Our_Menu{
     padding-bottom: 3%;
+}
+table, #deliveryfee,.order-btn,.checkout{
+    display: none;
 }
 .contact_us{
     background-color:whitesmoke;
@@ -40,13 +48,15 @@
     margin-right: 5%;
     padding-top: 1%;
     }
-    .contact_us h2{
-        text-align: center;
-        padding-top: 2%;
+.contact_us h2{
+    text-align: center;
+    padding-top: 2%;
+    color: burlywood;        
     
     
     }
-    .contact_us form{
+
+.contact_us form{
         padding-left: 5%;
         padding-right: 5%;
     }
