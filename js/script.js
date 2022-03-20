@@ -50,3 +50,17 @@ Pizza.prototype.pizzaTopp = function(){
         top = topping.name;
     });
 }
+$(document).ready(function(){
+    var total = 0;
+    var sizeInput = 0;
+    var toppingInput = 0;
+    var netTotal = 0;
+    pizzas.forEach(function(pizza){
+        $("button").click(function(){
+            if(this.id === pizza.id){
+                $("#orderName").text(pizza.name);
+
+                var pizzaSize = "";
+                var pizzaCrust = "";
+                var pizzaToppings = [];
+
