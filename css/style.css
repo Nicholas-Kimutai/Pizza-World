@@ -60,6 +60,10 @@ table, #deliveryfee,.order-btn,.checkout{
         padding-left: 5%;
         padding-right: 5%;
     }
+
+.form-bg button{
+        background-color:skyblue;
+    }
 .footer{
     background-color: black;
     color: white;

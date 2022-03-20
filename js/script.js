@@ -76,6 +76,8 @@ $(document).ready(function(){
                     pizza.crusts.forEach(function(crust){
                         var isChecked = $("#"+crust.name).is(':checked');
                         if(isChecked){
+                            $("#"+crust.name+"-"+"price").text(crust.price);
+                            crustInput = crust.price;
                             pizzaCrust = crust.name;
                         }
                     });
@@ -89,7 +91,7 @@ $(document).ready(function(){
                             }
                         }
                     })
-                    total = sizeInput + toppingInput;
+                    total = sizeInput + crustInput+ toppingInput;
                    
                    
                     $("#totalPrice").text( "Ksh."+ total); 
@@ -130,7 +132,7 @@ $(document).ready(function(){
             console.log(locationInput)
             console.log(phoneInput)
             if(nameInput !== "" && locationInput !== "" && phoneInput !== ""){
-                alert("Hey "+ nameInput+ ","+" We have received your order and our rider will be delivering it to: " + locationInput);
+                alert("Hi "+ nameInput+ ","+" We have received your order and our rider will be delivering it to: " + locationInput);
             }
             $("input#username").val("");
             $("input#location").val("");
