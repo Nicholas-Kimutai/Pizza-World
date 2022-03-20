@@ -118,4 +118,25 @@ $(document).ready(function(){
         })
     });
 
+    $("button#proceedbtn").click(function(){
+        $(".checkout").show();
+        $("form#checkoutfrm").submit(function(event){
+            event.preventDefault();
+            var nameInput = $("input#username").val();
+            var locationInput = $("input#location").val();
+            var phoneInput = $("input#phone").val();
+            
+            console.log(nameInput)
+            console.log(locationInput)
+            console.log(phoneInput)
+            if(nameInput !== "" && locationInput !== "" && phoneInput !== ""){
+                alert("Hey "+ nameInput+ ","+" We have received your order and our rider will be delivering it to: " + locationInput);
+            }
+            $("input#username").val("");
+            $("input#location").val("");
+            $("input#phone").val("");
+        });
+    })
+});
+
 
